@@ -22,7 +22,6 @@ export const post = async ({ request }) => {
         })
         
         stream.on('end', () => {
-            console.log(stream);
             resolve(result)
         })
     });
